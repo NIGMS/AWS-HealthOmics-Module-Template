@@ -1,6 +1,0 @@
-{
-  "input": "s3://healthomics-methylseq-demo-testdata/samplesheet_test.csv",
-  "aligner": "bismark",
-  "fasta": " s3://healthomics-methylseq-demo-testdata/test_ref_data/genome.fa",
-  "outdir": "https://healthomics-methylseq-demo-testdata.s3.amazonaws.com/HealthOmics_Outpus/"
-}
