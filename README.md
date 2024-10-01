@@ -1,38 +1,29 @@
-![AWS HealthOmics](./assets/aws-healthomics-banner_600px.png)
+# HealthOmics scRNAseq Demo
 
-# AWS HealthOmics Tutorials
+## Overview:
+This repository was built for the purpose of introducing AWS HealthOmics and giving an example of converting a workflow to HealthOmics. It covers the topics of what services HealthOmics offers and a step by step guide of converting a scrnaseq nextflow to HealthOmics. 
 
-Example code that demonstrates how to store, process, and query genomic and biological datasets using AWS HealthOmics
+## Outcomes:
+* Create a reference store
+* Create a sequence store
+* Pushed public containers to ECR 
+* Create HealthOmics private workflow
 
-## Background
+## Requirements:
+* AWS Account
+* Proper IAM User and Role setup
+* Amazon SageMaker Notebook Instance
 
-[AWS HealthOmics](https://aws.amazon.com/omics/) helps healthcare and life sciences customers store, query, analyze, and generate insights from genomic and other biological data to improve human health.
+## Setup:
+1. Make check the policies of your SageMaker role and ensure that you have IAMFullAccess
+2. Once you are in SageMaker notebook open terminal and cd into the SageMaker directory.<br> 
+Then run the command: <br> git clone -b scrnaseq-demo https://github.com/NIGMS/AWS-HealthOmics-Module-Template.git
+3. Then change into the scrnaseq-demo folder and make a parameters folder using the command: <br>
+mkdir parameters
 
-This repository contains resources (e.g. code scripts, jupyter notebooks, etc) that demonstrate the usage of AWS HealthOmics.
+## Module Order:
+1. Review HealthOmics Tutorial
+2. HealthOmics ECR Setup
+3. HealthOmics Storage Setup
+4. HealthOmics Workflow
 
-## Setup
-
-The quickest setup to run example notebooks includes:
-- An [AWS account](http://docs.aws.amazon.com/omics/latest/dev/setting-up.html#setting-up-aws-sign-up)
-- Proper [IAM User and Role](http://docs.aws.amazon.com/omics/latest/dev/setting-up.html#setting-up-create-iam-user) setup
-- An [Amazon SageMaker Notebook Instance](http://docs.aws.amazon.com/sagemaker/latest/dg/gs-setup-working-env.html)
-
-
-## Tutorials
-### Storage
-* [Using HealthOmics Storage with genomics references and readsets](./notebooks/200-omics_storage.ipynb): Get acquainted with HealthOmics storage by creating reference and sequence stores, importing data from FASTQ and CRAM files, and downloading readsets.
-### Workflows
-* [Running WDL and Nextflow pipelines with HealthOmics Workflows](./notebooks/200-omics_workflows.ipynb): Learn how to create, run, and debug WDL and Nextflow based pipelines that process data from HealthOmics Storage and Amazon S3 using HealthOmics Workflows.
-### Analytics
-* [Querying annotations and variants with HealthOmics Analytics](./notebooks/200-omics_analytics.ipynb): Get started with HealthOmics Analytics by importing variant and annotation data from VCF, TSV, and GFF files, and performing genome scale analysis queries using Amazon Athena.
-
-## License
-
-This library is licensed under the [Apache 2.0 License](http://aws.amazon.com/apache2.0/). For more details, please take a look at the [LICENSE](./LICENSE) file.
-
-## Security
-
-See the [Security issue notifications](./CONTRIBUTING.md#security-issue-notifications) section of our [contributing guidelines](./CONTRIBUTING.md) for more information.
-
-## Contributing
-Although we're extremely excited to receive contributions from the community, we're still working on the best mechanism to take in examples from external sources. Please bear with us in the short-term if pull requests take longer than expected or are closed. Please read our [contributing guidelines](./CONTRIBUTING.md) if you'd like to open an issue or submit a pull request.
