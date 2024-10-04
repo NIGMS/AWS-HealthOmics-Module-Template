@@ -1,7 +1,7 @@
 # HealthOmics scRNAseq Demo
 
 ## Overview:
-This repository was built for the purpose of introducing AWS HealthOmics and giving an example of converting a workflow to HealthOmics. It covers the topics of what services HealthOmics offers and a step by step guide of converting a scrnaseq nextflow to HealthOmics. 
+This repository was built for the purpose of introducing AWS HealthOmics and giving an example of converting a workflow to HealthOmics. It covers the topics of what services HealthOmics offers and a step by step guide of converting a scrnaseq nf-core nextflow pipeline to HealthOmics. 
 
 ## Outcomes:
 * Build and push public containers to ECR
@@ -12,7 +12,7 @@ This repository was built for the purpose of introducing AWS HealthOmics and giv
 ## Requirements:
 * AWS Account
 * Proper IAM User and Role setup
-* Amazon SageMaker Notebook Instance
+* Amazon SageMaker Notebook Instance in us-east-1 region
 
 ## Setup:
 1. Check the policies of your SageMaker role and ensure that you have IAMFullAccess
