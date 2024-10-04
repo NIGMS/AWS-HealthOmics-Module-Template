@@ -17,12 +17,11 @@ This repository was built for the purpose of introducing AWS HealthOmics and giv
 ## Setup:
 1. Check the policies of your SageMaker role and ensure that you have IAMFullAccess
 2. Once you are in SageMaker notebook open terminal and cd into the SageMaker directory.<br> 
-Then run the command: <br> git clone -b scrnaseq-demo https://github.com/NIGMS/AWS-HealthOmics-Module-Template.git
+Then run the command: <br> git clone -b scrnaseq_demo https://github.com/NIGMS/AWS-HealthOmics-Module-Template.git
 3. Then cd into the scrnaseq-demo folder and begin going through the modules according to the order suggested below.
 
 ## Module Order:
-1. Review HealthOmics Tutorial (Optional)
-2. HealthOmics ECR Setup
-3. HealthOmics Workflow
-4. HealthOmics Storage Setup (Optional)
+1. HealthOmics ECR Setup
+2. HealthOmics Workflow
+3. HealthOmics Storage Setup (Optional)
 
