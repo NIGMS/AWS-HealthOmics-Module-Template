@@ -15,10 +15,10 @@ This repository was built for the purpose of introducing AWS HealthOmics and giv
 * Amazon SageMaker Notebook Instance in **us-east-1 region**
 
 ## Setup:
-1. Check the policies of your SageMaker role and ensure that you have IAMFullAccess
+1. Check the policies of your SageMaker role and ensure that you have IAMFullAccess before running notebooks.
 2. Once you are in SageMaker notebook open terminal and cd into the SageMaker directory.<br> 
-Then run the command: <br> git clone -b fastqc-demo https://github.com/NIGMS/AWS-HealthOmics-Module-Template.git
-3. Then cd into the fastqc-demo folder and begin going through the modules according to the order suggested below.
+Then run the command: <br> git clone -b fastqc_demo https://github.com/NIGMS/AWS-HealthOmics-Module-Template.git
+3. Then cd into the *AWS-HealthOmics-Module-Template* folder and begin going through the modules according to the order suggested below.
 
 ## Module Order:
 1. Review HealthOmics Tutorial (Optional)
